@@ -1,4 +1,4 @@
-FROM applibs/grcalculator-docker:latest
+FROM applibs/grcalculator-docker-base:base
 
 RUN R -e "remotes::install_github('uc-bd2k/GRmetrics', dependencies = F)"
 RUN R -e "remotes::install_github('uc-bd2k/shinyLi', dependencies = F)"
